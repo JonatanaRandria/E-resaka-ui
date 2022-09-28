@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/screens.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,9 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'e-resaka',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity),
+      home: HomeScreen(),
     );
   }
 }
