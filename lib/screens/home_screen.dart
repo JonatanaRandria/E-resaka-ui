@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                   iconSize: 30.0,
                   onPressed: () => print('Search')),
               CircleButton(
-                  icon: Icons.message,
+                  icon: Icons.messenger,
                   iconSize: 30.0,
                   onPressed: () => print('Message icons'))
             ],
