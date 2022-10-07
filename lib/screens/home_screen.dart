@@ -1,3 +1,4 @@
+import 'package:e_resaka_app/components/circle_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -25,24 +26,14 @@ class HomeScreen extends StatelessWidget {
             centerTitle: false,
             floating: true,
             actions: [
-              Container(
-                  margin: const EdgeInsets.all(6.0),
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200], shape: BoxShape.circle),
-                  child: IconButton(
-                      icon: Icon(Icons.search),
-                      iconSize: 30.0,
-                      color: Colors.black,
-                      onPressed: (() {}))),
-              Container(
-                  margin: const EdgeInsets.all(6.0),
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200], shape: BoxShape.circle),
-                  child: IconButton(
-                      icon: Icon(Icons.message),
-                      iconSize: 30.0,
-                      color: Colors.black,
-                      onPressed: (() {})))
+              CircleButton(
+                  icon: Icons.search,
+                  iconSize: 30.0,
+                  onPressed: () => print('Search')),
+              CircleButton(
+                  icon: Icons.messenger,
+                  iconSize: 30.0,
+                  onPressed: () => print('Message icons'))
             ],
           )
         ],
